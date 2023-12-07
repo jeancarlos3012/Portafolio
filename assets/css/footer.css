@@ -1,0 +1,92 @@
+/* Establece el tamaño de fuente base en el elemento html */
+
+
+/* Estilo general del footer */
+.footer-distributed {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--bg-secondary);
+  color: var(--text);
+  padding: 2rem 5rem;
+  height: 30vh;
+
+}
+
+/* Estilo del bloque izquierdo del footer */
+.footer__left {
+  flex: 0.7;
+}
+
+.footer__title {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.footer__description {
+  font-size: 1rem;
+}
+
+/* Estilo del bloque central del footer */
+.footer__center {
+  flex: 1;
+  text-align: center;
+}
+
+.footer__icon {
+  font-size: 2rem;
+}
+
+.footer__location {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.footer__copyright {
+  font-size: 0.8rem;
+}
+
+/* Estilo del bloque derecho del footer */
+.footer__right {
+  flex: 0.7;
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer__social-icon {
+  font-size: 2rem;
+  color: var(--text);
+  text-decoration: none;
+  transition: color 0.3s ease-out;
+}
+
+/* Modificadores para iconos de redes sociales */
+.footer__social-icon--facebook:hover {
+  color: #1877f2;
+}
+
+.footer__social-icon--twitter:hover {
+  color: #1da1f2;
+}
+
+.footer__social-icon--linkedin:hover {
+  color: #2867b2;
+}
+
+@media (max-width:950px) {
+  .footer-distributed {
+    flex-direction: column;
+    row-gap: 3rem;
+    padding: 2rem;
+    height: auto;
+  }
+
+  .footer__left {
+    order: 3;
+  }
+
+  .footer__right {
+    column-gap: 2rem;
+  }
+
+}

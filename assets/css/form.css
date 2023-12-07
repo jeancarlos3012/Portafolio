@@ -1,0 +1,86 @@
+.dialog::backdrop {
+  background-image: linear-gradient(45deg,
+      rgb(141, 58, 141),
+      rebeccapurple,
+      dodgerblue,
+      green);
+  opacity: 0.75;
+}
+
+.dialog {
+  background-color: var(--bg);
+  color: var(--text);
+  margin: auto;
+  width: 90%;
+  max-width: 900px;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.10);
+}
+
+.dialog__button {
+  background-color: var(--text);
+  color: var(--bg);
+  border: none;
+  padding: 2px 4px;
+  cursor: pointer;
+  float: right;
+  margin: 1rem;
+  border-radius: 10px;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.dialog__button:hover {
+  background-color: #e74c3c;
+  color: var(--text);
+}
+
+
+.form--conteiner {
+  margin: 2rem;
+  padding: 20px;
+}
+
+.form__label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.form__input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 1rem;
+  border: none;
+}
+
+.form__area {
+  max-width: 100%;
+  min-width: 100%;
+  font-family: 'Inter', sans-serif;
+
+}
+
+.form__button {
+  padding: 10px;
+  background-color: var(--morph1);
+  color: var(--text);
+  cursor: pointer;
+  transition: transform 0.5s;
+  /* width: 100%; */
+  border: none;
+}
+
+.form__button:hover {
+  transform: scale(1.1);
+}
+
+.form__button:active {
+  transform: scale(0.8);
+}
+
+@media (max-width:950px) {
+  .form--conteiner {
+    margin: 4rem 2rem;
+    padding: 0;
+  }
+}
